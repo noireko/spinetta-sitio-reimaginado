@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Oficial</title>
+    <link rel="stylesheet" href="../.css/styles.css" />
+  </head>
+  <body> 
+    <header class="header-tienda">
+      <nav class="navbar-tienda">
+        <button class="carrito-btn">🛒</button>
+        <div class="logo" id="logo">
+<a href="../index.html"><img
+            src="../.img/logo.png"
+            alt="Logo del sitio oficial de Spinetta"
+          /></a>        </div>
+        <ul class="nav-links-tienda" id="navLinks">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../Biografia/index.html">Bio</a></li>
+          <!-- Primer dropdown -->
+          <li class="dropdown-tienda">
+            <a href="../Bandas/index.html" class="dropbtn">Bandas</a>
+            <ul class="dropdown-content-tienda">
+              <li>
+                <a href="../Bandas/Invisible/invisible.html">Invisible</a>
+              </li>
+              <li>
+                <a href="../Bandas/SpinettaJade/spinetta_jade.html"
+                  >Spinetta Jade</a
+                >
+              </li>
+              <li><a href="../Bandas/Almendra/almendra.html">Almendra</a></li>
+              <li>
+                <a href="../Bandas/PescadoRabioso/pescado_rabioso.html"
+                  >Pescado Rabioso</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Segundo dropdown -->
+          <li class="dropdown-tienda">
+            <a href="../CarreraMusical/index.html" class="dropbtn"
+              >Carrera Musical</a
+            >
+            <ul class="dropdown-content-tienda">
+              <li>
+                <a
+                  href="../CarreraMusical/Colaboraciones/ColaboracionesyOtrosProyectos.html"
+                  >Colaboraciones en Otros Proyectos</a
+                >
+              </li>
+              <li>
+                <a href="../CarreraMusical/Solista/solista.html"
+                  >Carrera Solista</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="../Discografia/index.html">Discografia</a></li>
+          <li><a href="../UltimoRecital/index.html">Ultimo Recital</a></li>
+          <li><a href="index.html">Tienda</a></li>
+          <li><a href="../Contactos/index.html">Contacto</a></li>
+        </ul>
+        <div class="hamburger-tienda" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="barra-busqueda">
+        <input type="text" placeholder="Buscar productos..." />
+        <button>Buscar</button>
+      </div>
+      <div>
+        <img
+          class="banner"
+          src="./img/banner2.jpg"
+          alt="Banner de la tienda"
+        />
+      </div>
+      <container class="destacados-tienda">
+        <div class="titulo-container-tienda">
+          <h2 class="titulo-tienda">Destacados</h2>
+        </div>
+        <div class="articulos-tienda">
+          <!-- Muchos artículos repetidos, despues lo arreglo -->
+          <div>
+            <figure>
+              <div class="img-tienda" class="popup-abrir" onclick="document.querySelector('.popup-tienda').style.display='flex'">
+                <img src="./img/vinilo2.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Pelusón Of Milk Vinilo Nuevo</span>
+                <strong>$ 71.999</strong>
+                <small>3 x $23.999 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/remera1.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Invisible - Durazno Sangrando</span>
+                <strong>$ 29.998</strong>
+                <small>3 x $9.999 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/cuadro.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Cuadro Luis Alberto Spinetta Pop Art 30x40cm</span>
+                <strong>$ 18.070</strong>
+                <small>3 x $6.023 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/cuadro1.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Cuadro Luis Alberto Spinetta 30x40cm</span>
+                <strong>$ 18.070</strong>
+                <small>3 x $23.999 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/vinilo1.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Vinilo Spinetta Kamikaze Lp Reedicion 2016</span>
+                <strong>$ 39.999</strong>
+                <small>3 x $13.333 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/vinilo.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span
+                  >Vinilo Luis Alberto Spinetta Exitos Seleccion Universal</span
+                >
+                <strong>$ 30.000</strong>
+                <small>3 x $10.000 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/camiseta.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Almendra Remera Algodon Premium</span>
+                <strong>$ 25.801</strong>
+                <small>3 x $8.600 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/vinilo1.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Vinilo Spinetta Kamikaze Lp Reedicion 2016</span>
+                <strong>$ 39.999</strong>
+                <small>3 x $13.333 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/poster.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Por Lecturas Y Reescrituras - Libro</span>
+                <strong>$ 24.900</strong>
+                <small>3 x $8.300 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/remera1.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Invisible - Durazno Sangrando</span>
+                <strong>$ 29.998</strong>
+                <small>3 x $9.999 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/cuadro1.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Cuadro Luis Alberto Spinetta 30x40cm</span>
+                <strong>$ 18.070</strong>
+                <small>3 x $23.999 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/vinilo2.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Pelusón Of Milk Vinilo Nuevo</span>
+                <strong>$ 71.999</strong>
+                <small>3 x $23.999 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/cuadro.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Cuadro Luis Alberto Spinetta Pop Art 30x40cm</span>
+                <strong>$ 18.070</strong>
+                <small>3 x $6.023 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/poster.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Por Lecturas Y Reescrituras - Libro</span>
+                <strong>$ 24.900</strong>
+                <small>3 x $8.300 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/cuadro1.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Cuadro Luis Alberto Spinetta 30x40cm</span>
+                <strong>$ 18.070</strong>
+                <small>3 x $23.999 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/vinilo.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span
+                  >Vinilo Luis Alberto Spinetta Exitos Seleccion Universal</span
+                >
+                <strong>$ 30.000</strong>
+                <small>3 x $10.000 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/camiseta.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Almendra Remera Algodon Premium</span>
+                <strong>$ 25.801</strong>
+                <small>3 x $8.600 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <div class="img-tienda">
+                <img src="./img/cuadro.jpg" />
+              </div>
+              <figcaption class="figcaption-tienda">
+                <span>Cuadro Luis Alberto Spinetta Pop Art 30x40cm</span>
+                <strong>$ 18.070</strong>
+                <small>3 x $6.023 sin interés</small>
+              </figcaption>
+            </figure>
+          </div>
+      </container>
+      <img
+        src="./img/banner.png"
+        alt="Banner de la tienda"
+        class="banner2"
+      />
+    </main>
+    <div class="popup-tienda">
+      <div class="popup-contenido">
+        <button class="popup-cerrar" onclick="document.querySelector('.popup-tienda').style.display='none'">&times;</button>
+        <h2>Finalizar compra</h2>
+        <form class="form-compra" id="form-compra">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required minlength="3" />
+        
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+        
+          <label for="direccion">Dirección de envío</label>
+          <input type="text" id="direccion" name="direccion" required minlength="5" />
+        
+          <label for="producto">Producto</label>
+          <input type="text" id="producto" name="producto" value="Nombre del producto" readonly />
+        
+          <label for="cantidad">Cantidad</label>
+          <input type="number" id="cantidad" name="cantidad" min="1" value="1" required />
+        
+          <label for="pago">Método de pago</label>
+          <select id="pago" name="pago" required>
+            <option value="">Seleccionar</option>
+            <option value="tarjeta">Tarjeta de crédito</option>
+            <option value="debito">Tarjeta de débito</option>
+            <option value="transferencia">Transferencia bancaria</option>
+          </select>
+          <button type="submit">Finalizar compra</button>
+          <button type="submit" onclick="document.getElementById('mensaje-gracias').style.display='none'">Cerrar</button>
+          <div id="form-error" style="color: red; margin-top: 0.5em; display: none;"></div>
+        </form>
+      </div>
+    </div>
+    <div class="popup-gracias">
+      <div class="popup-gracias-contenido" id="mensaje-gracias" style="display: none;">
+        <h2>¡Gracias por su compra!</h2>
+        <p>Su pedido ha sido recibido y será procesado a la brevedad.</p>
+        <button onclick="this.closest('.popup-gracias').style.display='none'">Cerrar</button>
+      </div>
+    </div>
+    <footer>
+      <h2>Contacto</h2>
+      <p>Copyright © 2025, Sony Music Entertainment Argentina, S.L.</p>
+      <p>
+        Reservados todos los derechos | Política de privacidad y cookies |
+        Condiciones generales
+      </p>
+    </footer>
+    <script src="../.js/script.js"></script>
+  </body>
+</html>

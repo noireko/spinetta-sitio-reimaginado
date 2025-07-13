@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos base para Mobile First */
+
+.header-disco {
+  background-color: #fff;
+  /*background-color: #c2701e;*/
+  padding: 0.8em;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links-disco {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  /*  background-color: #333;*/
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links-disco ul {
+  list-style-type: none;
+}
+
+.nav-links-disco li {
+  width: 100%;
+  font-size: var(--subtitulos);
+  font-weight: bold;
+}
+
+.nav-links-disco a {
+  color: #2c1a16;
+  text-decoration: none;
+  padding: 1em 0;
+  display: block;
+}
+
+.nav-links-disco a:hover {
+  background-color: #555;
+}
+
+.dropdown-content-disco {
+  display: none;
+  background-color: #333;
+  text-align: left;
+}
+
+.dropdown-content-disco a {
+  color: #2c1a16;
+  background-color: #cacaca;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-disco a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content-disco {
+  display: block;
+}
+
+.icono-disco {
+  height: 15px;
+  width: 15px;
+  margin-right: 1rem;
+}
+
+.contacto-iconos {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 1rem;
+}
+
+.hamburger-disco {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.hamburger-disco span {
+  height: 0.188em;
+  background-color: #2c1a16;
+  margin: 0.188em 0;
+  width: 1.563em;
+}
+
+.nav-active {
+  display: flex;
+}
+
+/* Ocultar logo cuando el menú hamburguesa esté activo */
+.logo-hidden {
+  display: none;
+}
+
+/* Modo Mobile: Mostrar/Ocultar dropdown cuando tiene la clase activa */
+.show-dropdown {
+  display: block;
+}
+
+/* CODIGO DISCO */
+.container-disco {
+  padding-top: 40px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.info-discografia {
+  float: left;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.lista-discos-info {
+  float: left;
+  width: 100%;
+}
+
+.ullista-disco {
+  width: 100%;
+  float: left;
+  position: relative;
+  border-top: 1px solid #b5b5b5;
+  padding-top: 15px;
+  margin-top: 15px;
+
+  list-style: none;
+}
+
+.lilista-disco {
+  float: left;
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #6c6c6c;
+  list-style: none;
+}
+
+.discos-container {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articulo-disco {
+  float: left;
+  margin: 0 15px 30px 15px;
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.foto-disco {
+  float: left;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.articulo-info {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.articulo-info p {
+  float: left;
+  width: calc(100% - 50px);
+  padding-right: 10px;
+  color: #000;
+  font-size: 16px;
+  padding-bottom: 20px;
+  line-height: 1.3em;
+}
+
+.articulo-info span {
+  float: left;
+  width: 50px;
+  text-align: right;
+  padding-bottom: 20px;
+  line-height: 1.3em;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .nav-links-disco {
+    display: flex; /* Mostrar menú siempre visible en desktop */
+    flex-direction: row;
+    width: auto;
+    text-align: initial;
+  }
+
+  .nav-links-disco li {
+    width: auto;
+    padding: 0 1em;
+  }
+
+  .nav-links-disco a {
+    padding: 0.5em 1em;
+  }
+
+  .hamburger-disco {
+    display: none; /* Ocultar hamburguesa en desktop */
+  }
+
+  /* Ajustar logo */
+  .logo img {
+    width: 250px; /* Ajusta según prefieras */
+    padding-left: 50px;
+    width: auto;
+  }
+
+  /* Dropdowns en desktop */
+  .dropdown-content-disco {
+    position: absolute;
+    display: none;
+    background-color: #2c1a16;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content-disco {
+    display: block;
+  }
+
+  .dropdown-content-disco a {
+    color: #fff;
+    background-color: #2c1a16;
+    padding: 0.5em 1em;
+    text-align: left;
+  }
+
+  .dropdown-content-disco a:hover {
+    background-color: #502f27;
+  }
+
+  .container-disco {
+    padding-top: 80px;
+    width: 1400px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .info-discografia {
+    float: left;
+    width: 17%;
+    padding: 0;
+  }
+
+  .lista-discos-info {
+    float: left;
+    width: 100%;
+  }
+
+  .ullista-disco {
+    float: left;
+    width: 100%;
+    width: 90%;
+    position: relative;
+    border-top: 1px solid #b5b5b5;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+
+  .lilista-disco {
+    float: left;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #6c6c6c;
+    list-style: none;
+  }
+
+  .discos-container {
+    float: left;
+    width: 83%;
+  }
+
+  .articulo-disco {
+    float: left;
+    width: calc(25% - 30px);
+    margin: 0 15px 30px 15px;
+    border-bottom: 1px solid #b5b5b5;
+  }
+
+  .foto-disco {
+    float: left;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .articulo-info {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .articulo-info p {
+    float: left;
+    width: calc(100% - 50px);
+    padding-right: 10px;
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: 1.3em;
+  }
+
+  .articulo-info span {
+    float: left;
+    width: 50px;
+    text-align: right;
+    font-size: 16px;
+    color: #6c6c6c;
+    padding-bottom: 20px;
+    line-height: 1.3em;
+  }
+}
